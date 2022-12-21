@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+        /* font-family: 'lato', sans-serif; */
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        /*font-family: 'Source Sans Pro', sans-serif; */
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* #navbar desining starts */
+        #logo {}
+
+        #logo img {
+            margin: 10px 20px;
+            height: 60px;
+            width: 60px;
+            border-radius: 35px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+            height: 65px;
+            align-items: center;
+
+
+
+
+            justify-content: space-between;
+            top: 0;
+            position: sticky;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.6)url(img/cardriver.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .navbar ul b {
+            display: flex;
+            font-family: 'lato', sans-serif;
+        }
+
+        .navbar ul b li {
+            list-style: none;
+            font-size: 1.0rem;
+            padding: 0px 20px;
+            font-size: 1.0rem
+        }
+
+        .navbar ul b li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar ul b li a:hover {
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .bodyi {
+            width: 100%;
+            height: 400px;
+        }
+
+        .bodyi h1 {
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 2px;
+            padding-top: 100px;
+            text-align: center
+        }
+
+        .bodyi p {
+            color: white;
+            font-family: 'lato', sans-serif;
+            text-align: center;
+            font-size: 1.8rem;
+            padding-top: 5px
+        }
+
+        #vss {
+            font-size: 1.2rem;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(200, 96, 96);
+
+        }
+
+        .benedr {
+            background-color: rgb(210, 217, 225);
+            height: 500px
+        }
+
+        .enjoydr h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-top: 30px;
+        }
+
+        .twova {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px
+        }
+
+        #mon {
+            width: 400px;
+            height: 300px;
+        }
+
+        #mon h3 {
+            font-family: 'lato', sans-serif;
+            text-align: center
+        }
+
+        #mon p {
+            font-family: 'lato', sans-serif;
+        }
+
+        #tris {
+            width: 400px;
+            height: 300px
+        }
+
+        #tris h3 {
+            font-family: 'lato', sans-serif;
+            text-align: center
+        }
+
+        #tris p {
+            font-family: 'lato', sans-serif;
+        }
+
+        #sched {
+            width: 400px;
+            height: 300px
+        }
+
+        #sched h3 {
+            font-family: 'lato', sans-serif;
+            text-align: center
+        }
+
+        #sched {
+            font-family: 'lato', sans-serif;
+        }
+
+        #moni img {
+            width: 35%;
+            height: 140px;
+            border-radius: 110px;
+            margin-left: 130px;
+        }
+
+        #tripsch img {
+            width: 35%;
+            height: 140px;
+            border-radius: 110px;
+            margin-left: 130px;
+        }
+
+        #watim img {
+            width: 35%;
+            height: 140px;
+            border-radius: 110px;
+            margin-left: 130px;
+        }
+
+
+
+
+
+        #vss p {
+            color: white;
+            padding: 7px
+        }
+
+        .vsswhat {
+            height: 300px;
+            background-color: rgb(164, 186, 186);
+        }
+
+        .vsswhat p {
+            padding-left: 20px;
+            font-size: 1.2rem;
+            font-family: 'lato', sans-serif;
+            width: 80%
+        }
+
+        .vsswhat h2 {
+            padding-left: 20px;
+            padding-top: 100px
+        }
+
+        .vvsdri {
+            background-color: rgb(212, 219, 219);
+            height: 530px;
+        }
+
+        .vvsdri h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            padding: 30px 0px
+        }
+
+        .twoco {
+            display: flex;
+            justify-content: center;
+            font-family: 'lato', sans-serif;
+        }
+
+        #firstdr {
+            height: 400px;
+            width: 350px;
+            background-color: rgb(186, 194, 203);
+            margin: 0px 7px;
+        }
+
+        #firstdr img {
+            width: 150px;
+            height: 150px;
+            border-radius: 80px;
+            margin: 5px 100px
+        }
+
+        #seconddr {
+            height: 400px;
+            width: 350px;
+            background-color: rgb(186, 194, 203);
+            margin: 0px 7px
+        }
+
+        #seconddr img {
+            width: 150px;
+            height: 150px;
+            border-radius: 80px;
+            margin: 5px 100px
+        }
+
+        #firstdr p {
+            padding: 5px 15px;
+        }
+
+        #firstdr h3 {
+            padding: 5px 15px;
+        }
+
+        #seconddr p {
+            padding: 5px 15px;
+        }
+
+        #seconddr h3 {
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<div style="width:1270px;margin:0px auto;overflow:hidden;">
+<body>
+    <nav class="navbar background">
+        <div id="logo">
+            <a href="index.html">
+            <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+        </div>
+        <ul class="nav-list">
+            <b>
+                <li><a href="sign.html">SIGN UP</a></li>
+                <!--in result underline will come because of anchor tag used here-->
+                <li><a href="LOGIN.html">LOGIN</a></li>
+                <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
+                <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
+            </b>
+        </ul>
+    </nav>
+    <div class="bodyi background">
+        <h1>FREEDOM TO BE THE BEST </h1>
+        <p>Join our exclusive team of private drivers</p>
+    </div>
+
+    <div class="benedr">
+        <div class="enjoydr">
+            <h2>Enjoy the benefits of being the best</h2>
+        </div>
+        <div class="twova">
+            <div id="mon">
+                <div id="moni"><img src="img/moneysi.png"></div>
+                <h3>Make your money</h3>
+                <p>Longer trips and less downtime means drivers can consistently earn upto Rs.20,000 per week</p>
+            </div>
+            <div id="tris">
+                <div id="tripsch"><img src="img/carsi.png"></div>
+                <h3>Choose your trips</h3>
+                <p>Top drivers receive unlimited leads and priority access to choose exactly the trips they want.</p>
+            </div>
+
+            <div id="sched">
+                <div id="watim"><img src="img/watchi.png"></div>
+                <h3>Set your schedule </h3>
+                <p>Enjoy complete freedom of choice.Choose the trips you want and the clients you want.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vsswhat">
+        <h2>What is vvscar?</h2>
+        <p>vvscar matches proffessional drivers with passengers who want to driven in their own car.We maintain an
+            exclusive
+            network of only highest rated drivers.
+        </p>
+    </div>
+
+
+    <div class="vvsdri">
+        <h2>What our drivers have to say</h2>
+        <div class="twoco">
+            <div id="firstdr">
+                <div id="souravimg"><img src="img/sourav.jpg" alt="driver image"></div>
+                <p>"Driving with vvs car has allowed me to make the money i nedd and spend more time with my family.
+                    Best of all,i see direct rewards for doing a good job"
+                </p>
+                <h3>Sourav kumar</h3>
+            </div>
+
+            <div id="seconddr">
+                <div id="vinimg"><img src="img/vinay.jpg" alt="driver image"></div>
+                <p>"I love working with other proffessional drivers who care about their custombers and take pride in
+                    their jobs."</p>
+                <h3>Vinay kamandla</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+    <div id="vss">
+        <p class="copyright">copyright &copy;vvs car rental.com</p>
+    </div>
+</body>
+</div>
+</html>

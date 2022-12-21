@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        /* font-family: 'lato', sans-serif; */
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+        /*font-family: 'Source Sans Pro', sans-serif; */
+        /* #navbar desining starts*/
+        #logo {}
+
+        #logo img {
+            margin: 10px 20px;
+            height: 60px;
+            width: 60px;
+            border-radius: 35px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        #navbar {
+            display: flex;
+            height: 65px;
+            align-items: center;
+            background: rgb(13, 143, 143);
+            justify-content: space-between;
+            top: 0;
+            position: sticky;
+        }
+
+
+        #navbar ul b {
+            display: flex;
+            font-family: 'lato', sans-serif;
+        }
+
+        #navbar ul b li {
+            list-style: none;
+            font-size: 1.0rem;
+            padding: 0px 20px;
+        }
+
+        #navbar ul b li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list b li2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #navbar ul b li a:hover {
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .nav-list b li2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .popular {
+            background-color: beige;
+        }
+
+        .popular h2 {
+            text-align: center;
+            color: rgb(115, 115, 25);
+            padding-top: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        /* #varanasi{transition:opacity 0.4s ease-in-out;background: black;cursor:pointer}  */
+
+        .pop1 {
+            height: 385px;
+            background-color: white;
+            width: 400px;
+            margin: 10px;
+            border: 5px solid white
+        }
+
+        .varanasi {
+            height: 350px;
+            width: 100%
+        }
+
+        .varanasi img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .pop1 p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 150px
+        }
+
+
+        .pop2 {
+            height: 385px;
+            background-color: white;
+            width: 400px;
+            margin: 10px;
+            border: 5px solid white
+        }
+
+        #madurai {
+            height: 350px;
+            width: 100%
+        }
+
+        #madurai img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .pop2 p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 150px
+        }
+
+
+        .pop3 {
+            height: 385px;
+            background-color: white;
+            width: 400px;
+            margin: 10px;
+            border: 5px solid white
+        }
+
+        #jaipur {
+            height: 350px;
+            width: 100%
+        }
+
+        #jaipur img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .pop3 p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 150px
+        }
+
+
+        .pop4 {
+            height: 385px;
+            background-color: white;
+            width: 400px;
+            margin: 10px;
+            border: 5px solid white
+        }
+
+        #india {
+            height: 350px;
+            width: 100%
+        }
+
+        #india img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .pop4 p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 150px
+        }
+
+
+
+        .pop5 {
+            height: 385px;
+            background-color: white;
+            width: 400px;
+            margin: 10px;
+            border: 5px solid white
+        }
+
+        #ayodhya {
+            height: 350px;
+            width: 100%
+        }
+
+        #ayodhya img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .pop5 p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 150px
+        }
+
+
+        .pop6 {
+            height: 385px;
+            background-color: white;
+            width: 400px;
+            margin: 10px;
+            border: 5px solid white
+        }
+
+        #ajanta {
+            height: 350px;
+            width: 100%
+        }
+
+        #ajanta img {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .pop6 p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2rem;
+            padding: 5px 130px
+        }
+
+
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        .full1 {
+            display: flex;
+            margin: 30px 200px
+        }
+
+        .full2 {
+            display: flex;
+            margin: 30px 200px
+        }
+
+        .full3 {
+            display: flex;
+            padding: 30px 200px
+        }
+
+        footer {
+            background-color: rgb(13, 143, 143);
+            bottom: 0;
+        }
+
+
+
+        #vss {
+            font-size: 1.2rem;
+            height: 40px;
+            text-align: center;
+            /* position: relative;
+    top:10px;  */
+        }
+
+        #vss p {
+            color: white;
+            padding: 7px
+        }
+    </style>
+</head>
+<div style="width:1270px;margin:0px auto;overflow:hidden;">
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+        </div>
+        <ul class="nav-list">
+            <b>
+                <li><a href="sign.html">SIGN UP</a></li>
+                <!--in result underline will come because of anchor tag used here-->
+                <li><a href="LOGIN.html">LOGIN</a></li>
+                <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
+                <li2><a href="">POPULAR LOCATIONS</a></li2>
+            </b>
+        </ul>
+    </nav>
+
+    <section class="popular destination">
+
+        <h2>Our popular destinations</h2>
+        <div class="full1">
+            <div class="pop1">
+                <div class="varanasi"><img
+                        src="https://www.scrolldroll.com/wp-content/uploads/2021/12/Varanasi_places-to-visit-in-uttar-pradesh-scaled.jpg"
+                        alt="varanasi"></div>
+                <p>VARANASI</p>
+            </div>
+
+            <div class="pop2">
+                <div id="madurai"><img src="https://www.nativeplanet.com/img/2014/07/18-6-madurai.jpg" alt="madurai">
+                </div>
+                <p>MADURAI</p>
+            </div>
+        </div>
+        <div class="full2">
+            <div class="pop3">
+                <div id="jaipur"><img
+                        src="https://www.scrolldroll.com/wp-content/uploads/2018/05/Jaipur-Rajasthan-1024x683.jpg"
+                        alt="jaipur"></div>
+                <p>JAIPUR</p>
+            </div>
+
+            <div class="pop4">
+                <div id="india"><img src="https://th.bing.com/th/id/OIP.Qrc-HQICcs8D8oKDmtkptAHaE7?pid=ImgDet&rs=1"
+                        alt="india gate"></div>
+                <p>DELHI</p>
+            </div>
+        </div>
+        <div class="full3">
+            <div class="pop5">
+                <div id="ayodhya"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ruhi.jpg/1920px-Ruhi.jpg"
+                        alt="ayodhya"></div>
+                <p>AYODHYA</p>
+            </div>
+
+            <div class="pop6">
+                <div id="ajanta"><img
+                        src="https://th.bing.com/th/id/OIP.6CDQrdL9aYMm9TjLl0MVMQHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="ajanta caves"></div>
+
+                <p>AJANTA CAVES</p>
+            </div>
+    </section>
+
+    <footer>
+
+        <hr>
+        <div id="vss">
+            <p class="copyright">copyright &copy;vvs car rental.com</p>
+        </div>
+    </footer>
+</body>
+</div>
+</html>

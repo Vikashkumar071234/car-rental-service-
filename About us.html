@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        /*font-family: 'Source Sans Pro', sans-serif; */
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* #navbar desining starts*/
+       
+
+        #logo img {
+            margin: 10px 20px;
+            height: 60px;
+            width: 60px;
+            border-radius: 35px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+            height: 65px;
+            align-items: center;
+            top: 0;
+            position: sticky;
+            justify-content: space-between;
+        }
+
+
+        .navbar ul b {
+            display: flex;
+            font-family: 'lato', sans-serif;
+        }
+
+        .navbar ul b li {
+            list-style: none;
+            font-size: 1.0rem;
+            padding: 0px 20px;
+            font-size: 1.0rem
+        }
+
+        .navbar ul b li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar ul b li a:hover {
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+       
+        .aboutv {
+            height: 537px;
+        }
+
+        .aboutv p {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-shadow: 3px 1px 2px black;
+            padding-top: 140px;
+            height: 300px
+        }
+
+        .mission {
+            background-color: rgb(225, 234, 240);
+            height: 400px;
+        }
+
+        .mission h2 {
+            font-family: 'lato', sans-serif;
+            padding-left: 30px;
+            height: 60px;
+            letter-spacing: 0.1rem;
+            padding-top:
+                120px
+        }
+
+        .mission p {
+            font-family: 'lato', sans-serif;
+            font-size: 1.2rem;
+            width: 80%;
+            padding-left: 30px
+        }
+
+        .reson {
+            background-color: rgb(166, 173, 180);
+        }
+
+        .sustai {
+            display: flex;
+            height: 400px;
+            align-items: center
+        }
+
+        #forim {
+            width: 40%
+        }
+
+        #firstre {
+            width: 50%
+        }
+
+        #firstre h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 0.1rem
+        }
+
+        #firstre p {
+            font-family: 'lato', sans-serif;
+            font-size: 1.2rem
+        }
+
+        #forim img {
+            width: 80%;
+            margin-left: 30px;
+            border: 5px solid white;
+        }
+
+        .rides {
+            display: flex;
+            height: 400px;
+            align-items: center;
+        }
+
+        #secre {
+            width: 50%;
+            margin-left: 30px
+        }
+
+        #secre h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 0.1rem
+        }
+
+        #secre p {
+            font-family: 'lato', sans-serif;
+            font-size: 1.2rem
+        }
+
+        #traimg {
+            width: 40%
+        }
+
+        #traimg img {
+            width: 80%;
+            margin-left: 165px;
+            border: 5px solid white;
+        }
+
+        .safety {
+            display: flex;
+            height: 400px;
+            align-items: center;
+        }
+
+        #safeimg {
+            width: 40%
+        }
+
+        #safeimg img {
+            width: 80%;
+            height: 300px;
+            margin-left: 30px;
+            border: 5px solid white
+        }
+
+        #safr {
+            width: 50%
+        }
+
+        #safr h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 0.1rem
+        }
+
+        #safr p {
+            font-family: 'lato', sans-serif;
+            font-size: 1.2rem
+        }
+        .members{background-color:rgb(223, 218, 212);}
+
+        .firstthr {
+            display: flex;
+            justify-content: center;
+            padding-top: 80px 
+        }
+
+        .brand {
+            width: 200px;
+            height: 350px;
+            margin: 0px 50px;text-align:center;font-family: 'lato', sans-serif;
+        }
+        
+        
+        .ceo {
+            width: 200px;
+            height: 350px;
+            margin: 0px 50px;text-align:center; font-family: 'lato', sans-serif;
+        }
+
+        .riderhand {
+            width: 200px;
+            height: 350px;
+            margin: 0px 50px;text-align:center; font-family: 'lato', sans-serif;
+        }
+
+        #msdhoni img {
+            width: 100%;
+            height: 200px;
+            border-radius: 150px
+        }
+
+        #salsir img {
+            width: 100%;
+            height: 200px;
+            border-radius: 150px
+        }
+
+        #rideimg img {
+            width: 100%;
+            height: 200px;
+            border-radius: 150px
+        }
+
+
+        .secthr {
+            display: flex;
+            justify-content: center;
+        }
+
+        .finan {
+            width: 200px;
+            height: 400px;
+            margin: 0px 50px;text-align:center; font-family: 'lato', sans-serif;
+        }
+
+        .tech {
+            width: 200px;
+            height: 400px;
+            margin: 0px 50px;text-align:center; font-family: 'lato', sans-serif;
+        }
+
+        .senior {
+            width: 200px;
+            height: 400px;
+            margin: 0px 50px;text-align:center; font-family: 'lato', sans-serif;
+        }
+
+        #finimg img {
+            width: 100%;
+            height: 200px;
+            border-radius: 150px
+        }
+
+        #abhinav img {
+            width: 100%;
+            height: 200px;
+            border-radius: 150px
+        }
+
+        #sidharth img {
+            width: 100%;
+            height: 200px;
+            border-radius: 150px
+        }
+
+
+
+        #vss {
+            font-size: 1.2rem;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(116, 119, 119); font-family: 'lato', sans-serif;
+
+        }
+
+        #vss p {
+            color: white;
+            padding: 7px
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.6)url(img/bgabout.jpg);
+             background-size: cover;  
+            background-blend-mode: darken} 
+      </style>      
+    
+</head>
+<div style="width:1270px;margin:0 auto;overflow:hidden;">
+<body>
+    <div style="width:1270px;margin:0 auto;overflow:hidden;">
+    <nav class="navbar background">
+        <div id="logo">
+            <a href="index.html">
+            <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+        </div>
+        <ul class="nav-list">
+            <b>
+                <li><a href="sign.html">SIGN UP</a></li>
+                <!--in result underline will come because of anchor tag used here-->
+                <li><a href="LOGIN.html">LOGIN</a></li>
+                <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
+                <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
+            </b>
+        </ul>
+    </nav>
+    </div>
+    
+    <section class=" background aboutv">
+        <div class="vksn">
+            <p>About us</p>
+        </div>
+
+    </section>
+    
+    <div class="mission">
+        <h2>We reimagine the way the world moves for better</h2>
+        <p>Movement is what we power.it's our lifeblood.it's what gets us out of bed each morning.it pushes us to
+            constantly
+            reimagine how we can move better.For you.For all the places you want to go.For all the things you want to
+            get.Across the
+            entire world.In real time.At the incredible speed now.
+        </p>
+
+    </div>
+
+
+    <div class="reson">
+        <div class="sustai">
+
+            <div id="forim"><img src="img/abutimgone.jpg" alt="forest image"></div>
+            <div id="firstre">
+                <h2>Sustainability</h2>
+                <p>vvs is committing to become a fully electric,zero-emission platform by 2040,with 100% of rides taking
+                    place in
+                    zero-emissionvechiles,on public transit,or with microbility.it is our responsibility as the largest
+                    mobility
+                    platform in the world to more aggressively tackle the challenge of climate change.we will do this by
+                    offering
+                    riders more ways to ride green,helping drivers to go electric,making transparency a priority and
+                    parterning with NGOs
+                    and the private sector to help expedite a clean and just energy transition.
+                </p>
+            </div>
+        </div>
+        <div class="rides">
+            <div id="secre">
+                <h2>Rides and beyond</h2>
+                <p>In addition to helping riders find a way to go from point A to point B,we're helping people to travel
+                    in less amount
+                    ,removing barriers to healthcare,creating new freight-booking solutions,and helping companies
+                    provide a seamless
+                    employee travel experience.And always helping drivers and couriers earn.
+
+                </p>
+            </div>
+            <div id="traimg"><img src="img/aboutimgtwo.jpg" alt="traffic"></div>
+        </div>
+
+        <div class="safety">
+            <div id="safeimg"><img src="img/safety.png"></div>
+            <div id="safr">
+                <h2>Your safety drives us</h2>
+                <p>Whether you are in the back seat or behind the wheel,your safety is essential.we are committed to
+                    doing our part
+                    ,and technology is at the heart of our approach.we partner with safety advocates and develop new
+                    technologies
+                    and systems to help improve and help make it easier for everyone to get around.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="members">
+        <div class="firstthr">
+            <div class="brand">
+                <div id="msdhoni"><img src="img/brandamb.jpg" alt="ms dhoni"></div>
+                <h3>Ms.Dhoni</h3>
+                <p>Brand Ambassodar of VVS</p>
+            </div>
+            <div class="ceo">
+                <div id="salsir"><img src="img/ceovvscar.jpg" alt="Ceo of vvs"></div>
+                <h3>Mr.Salim ul salim</h3>
+                <p>CEO,vvs </p>
+            </div>
+            <div class="riderhand">
+                <div id="rideimg"><img src="img/shivam.jpg" alt="shivam kumar singh"></div>
+                <h3>Shivam singh</h3>
+                <p>Founder,vvs</p>
+            </div>
+        </div>
+        <div class="secthr">
+            <div class="finan">
+                <div id="finimg"><img src="img/ankit.jpg" alt="ankit kumar singh"></div>
+                <h3>Ankit singh</h3>
+                <p>Chief Financial Officer,vvs</p>
+            </div>
+            <div class="tech">
+                <div id="abhinav"><img src="img/abhinav.jpg"></div>
+                <h3>Abhinav Raksel</h3>
+                <p>Chief Technology Officer,vvs</p>
+            </div>
+            <div class="senior">
+                <div id="sidharth"><img src="img/sidharth.jpg"></div>
+                <h3>Siddharth Singh</h3>
+                <p>Chief of Ride-Handling,vvs</p>
+            </div>
+        </div>
+    
+    <div id="vss">
+        <p class="copyright">copyright &copy;vvs car rental.com</p>
+    </div>
+</div>
+</body>
+</div>
+</html>

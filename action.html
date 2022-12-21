@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vvs collection</title>
+    <link rel="stylesheet" href="js/script.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        /* font-family: 'lato', sans-serif; */
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+        /*font-family: 'Source Sans Pro', sans-serif; */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        #logo img {
+            margin: 10px 20px;
+            height: 60px;
+            width: 60px;
+            border-radius: 35px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+            height: 65px;
+            align-items: center;
+
+
+            font-family: 'lato', sans-serif;
+            justify-content: space-between;
+            top: 0;
+            position: sticky;
+            background-color: rgb(13, 143, 143);
+        }
+
+
+        .navbar ul b {
+            display: flex;
+        }
+
+        .navbar ul b li {
+            list-style: none;
+            font-size: 1.0rem;
+            padding: 0px 20px;
+        }
+
+        .navbar ul b li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar ul b li a:hover {
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .background {
+            background:
+                url(../img/imgbg.jpg);
+            background-size: cover;
+        }
+
+        /*navbar desining ends*/
+
+        /* home desining start */
+        .home {
+            display: flex;
+            flex-direction: column;
+            background: url('../img/imgbg.jpg');
+            height: 110vh;
+            background-repeat: no-repeat;
+        }
+
+        .home h1 {
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            letter-spacing: 0.2rem;
+        }
+
+        .home b {
+
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'lato', sans-serif;
+            padding: 30px
+        }
+
+        .navbar ul b li a:hover {
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .collection {
+            background-color: rgb(225, 222, 222);
+        }
+
+        .select h2 {
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-top: 20px;
+            color: rgb(183, 107, 107)
+        }
+
+        .select p {
+            text-align: center;
+            padding-top: 5px;
+            font-family: 'lato', sans-serif;
+            font-size: 1.1rem;
+            color: rgb(227, 7, 7)
+        }
+
+        .verna {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #hundai {
+            width: 90%;
+            height: 200px;
+        }
+
+        #hundai img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+        .swift {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #dzire {
+            width: 90%;
+            height: 200px
+        }
+
+        #dzire img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+        .merc {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #mercedes {
+            width: 90%;
+            height: 200px
+        }
+
+        #mercedes img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+        .thar {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #mahindra {
+            width: 90%;
+            height: 200px
+        }
+
+        #mahindra img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+
+        .cre {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #cret {
+            width: 90%;
+            height: 200px
+        }
+
+        #cret img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+
+        .vitara {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #brezz {
+            width: 90%;
+            height: 200px
+        }
+
+        #brezz img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+
+        .bla {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #scorpi {
+            width: 90%;
+            height: 200px
+        }
+
+        #scorpi img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+
+        .fort {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 40px
+        }
+
+        #fortu {
+            width: 90%;
+            height: 200px
+        }
+
+        #fortu img {
+            width: 100%;
+            padding-left: 10px
+        }
+
+
+        .col1 {
+            display: flex;
+        }
+
+        .col2 {
+            display: flex;
+        }
+
+        .col3 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .aco {
+            padding-top: 100px;
+            padding-left: 100px
+        }
+
+        #cost1 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'lato', sans-serif;
+        }
+
+        #cost1 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost2 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost2 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost3 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost3 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost4 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost4 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost5 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost5 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost6 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost6 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost7 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost7 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        #cost8 h3 {
+            text-align: center;
+            color: green;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost8 p {
+            text-align: center;
+            color: rgb(29, 29, 235);
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #cost1 th {
+            font-family: 'lato', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost1 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+
+        #cost2 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost2 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+
+        #cost3 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost3 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+
+
+        #cost4 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost4 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+
+        #cost5 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost5 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+        #cost6 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost6 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+        #cost7 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost7 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+
+        #cost8 th {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-left: 10px
+        }
+
+        #cost8 td {
+            font-family: 'Source Sans Pro', sans-serif;
+            color: green;
+            padding-left: 110px
+        }
+
+        #sele {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+        #selectbu {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #sutton {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #tton {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #tbutton {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #selectbutton {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #sel {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #selectbuttn {
+            height: 25px;
+            width: 100px;
+            margin-left: 100px;
+            margin-top: 15px;
+            background-color: red;
+            border-radius: 10px;
+            border: 2px solid blue
+        }
+
+
+        #vss {
+            font-size: 1.2rem;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(13, 143, 143);
+            ;
+            /* position: relative;
+    top:10px;  */
+        }
+
+        #vss p {
+            color: white;
+            padding: 7px
+        }
+    </style>
+
+    <script>
+        function vk() { window.alert("you have chosen verna car.our team will contact you later for payment") }
+        function vik() { window.alert("you have chosen swift dzire.our team will contact you later for payment") }
+        function vika() { window.alert("you have chosen mercedes.our team will contact you later for payment") }
+        function vikas() { window.alert("you have chosen Thar.our team will contact you later for payment") }
+        function hy() { window.alert("you have chosen creta.our team will conatct you later for payment") }
+        function acd() { window.alert("you have chosen Brezza.our team will contact you later for payment") }
+
+
+
+        function abc() { window.alert("you have chosen fortuner.our team will contact you later for payment") }
+        function ab() { window.alert("you have chosen scorpio.our team will contact you later for payment") }
+
+
+
+
+
+    </script>
+</head>
+<div style="width:1270px;margin:0px auto;overflow:hidden;">
+<body>
+
+    <nav class="navbar">
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+        </div>
+        <ul class="nav-list">
+            <b>
+                <li><a href="sign.html">SIGN UP</a></li>
+                <!--in result underline will come because of anchor tag used here-->
+                <li><a href="LOGIN.html">LOGIN</a></li>
+                <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
+                <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
+            </b>
+        </ul>
+    </nav>
+
+    <div class="collection">
+        <div class="select">
+            <h2>MAKE YOUR JOURNEY MEMORABLE WITH US</h2>
+            <p>Let's select the car you want</p>
+        </div>
+        <div class="aco">
+            <div class="col1">
+                <div class="verna">
+                    <div id="hundai"><img src="https://motorbash.com/wp-content/uploads/2017/08/New-Verna-Pics-rear.jpg"
+                            alt="hundai verna"></div>
+                    <div id="cost1">
+                        <h3>RS.15000</h3>
+                        <p>VERNA(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="vk()" id="sele"></a>
+
+
+                    </div>
+                </div>
+
+
+                <div class="swift">
+                    <div id="dzire"><img
+                            src="https://th.bing.com/th/id/R.690c4922b2288bdba2a41686d38a8b96?rik=7tyJ056DmeyoSQ&riu=http%3a%2f%2fpartnerassets.indianbluebook.com.s3-ap-southeast-1.amazonaws.com%2fupload%2fcar_detail%2fmaruti_suzuki%2fdzire%2fexterior_images%2fmaruti-suzuki-dzire-2.jpg&ehk=QLGW2y3B0zcQ35SHaXzNIWsQoG3CERaUIN1sdGvmUdY%3d&risl=&pid=ImgRaw&r=0"
+                            alt="swift dzire">
+
+                    </div>
+                    <div id="cost2">
+                        <h3>RS.12000</h3>
+                        <p>SWIFT(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="vik()" id="selectbu"></a>
+                    </div>
+                </div>
+
+
+                <div class="merc">
+                    <div id="mercedes"><img
+                            src="https://th.bing.com/th/id/OIP.oaIhg4tAueBgDNMbG8uzqwHaEH?pid=ImgDet&w=630&h=350&rs=1"
+                            alt="mercedes-AMG"></div>
+                    <div id="cost3">
+                        <h3>RS.30000</h3>
+                        <p>MERCEDES(AC)</p>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Included km</th>
+                            <td>1000 Km</td>
+                        </tr>
+                        <tr>
+                            <th>Extra fare/Km</th>
+                            <td>RS.12/Km</td>
+                        </tr>
+                        <tr>
+                            <th>Driver charges</th>
+                            <td>Included</td>
+                        </tr>
+                        <tr>
+                            <th>Night charges</th>
+                            <td>Included</td>
+                        </tr>
+                    </table>
+                    <a href="index.html"><input type="submit" value="Book Now" onclick="vika()" id="sutton"></a>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="thar">
+                    <div id="mahindra"><img
+                            src="https://cdni.autocarindia.com/ExtraImages/20200920023729_2020-Mahindra-Thar-red-studio.jpg"
+                            alt="mahindra thar"></div>
+
+                    <div id="cost4">
+                        <h3>RS.20000</h3>
+                        <p>MAHINDRA(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="vikas()" id="tton"></a>
+                    </div>
+                </div>
+
+
+                <div class="cre">
+                    <div id="cret"><img
+                            src="https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/gallery/pc/March/Hyundai_CRETA_SUV_Gallery_PC_1120x600_8.jpg"
+                            alt="Hundai creta"></div>
+                    <div id="cost5">
+                        <h3>RS.10000</h3>
+                        <p>CRETA(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="hy()" id="tbutton"></a>
+
+                    </div>
+                </div>
+                <div class="vitara">
+                    <div id="brezz"><img
+                            src="https://th.bing.com/th/id/OIP.bz8WjTO-wZ_vUqB0fucaXwHaFI?pid=ImgDet&w=650&h=451&rs=1"
+                            alt="Vitara Brezza"></div>
+                    <div id="cost6">
+                        <h3>RS.11000</h3>
+                        <p>BREZZA(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="acd()"
+                                id="selectbutton"></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col3">
+                <div class="bla">
+                    <div id="scorpi"><img
+                            src="https://th.bing.com/th/id/OIP.yfCvmnu48DszHfnJWC4kywHaEm?pid=ImgDet&w=820&h=510&rs=1"
+                            alt="Black Scorpio"></div>
+                    <div id="cost7">
+                        <h3>RS.12000</h3>
+                        <p>SCORPIO(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="ab()" id="sel"></a>
+
+                    </div>
+                </div>
+
+                <div class="fort">
+                    <div id="fortu"><img
+                            src="https://th.bing.com/th/id/OIP.aArwrDBJ-_UdPsoJygYdoAHaE7?pid=ImgDet&w=1000&h=665&rs=1"
+                            alt="Fortuner"></div>
+                    <div id="cost8">
+                        <h3>RS.20000</h3>
+                        <p>FORTUNER(AC)</p>
+                        <table>
+                            <tr>
+                                <th>Included km</th>
+                                <td>1000 Km</td>
+                            </tr>
+                            <tr>
+                                <th>Extra fare/Km</th>
+                                <td>RS.12/Km</td>
+                            </tr>
+                            <tr>
+                                <th>Driver charges</th>
+                                <td>Included</td>
+                            </tr>
+                            <tr>
+                                <th>Night charges</th>
+                                <td>Included</td>
+                            </tr>
+                        </table>
+                        <a href="index.html"><input type="submit" value="Book Now" onclick="abc()"
+                                id="selectbuttn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <hr>
+    <div id="vss">
+        <p class="copyright">copyright &copy;vvs car rental.com</p>
+    </div>
+</body>
+</div>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        /* font-family: 'lato', sans-serif; */
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        /*font-family: 'Source Sans Pro', sans-serif; */
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* #navbar desining starts*/
+        #logo {}
+
+        #logo img {
+            margin: 10px 20px;
+            height: 60px;
+            width: 60px;
+            border-radius: 35px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        #navbar {
+            display: flex;
+            height: 65px;
+            align-items: center;
+            background: rgb(94, 101, 101);
+            justify-content: space-between;
+            top: 0;
+            position: sticky;
+        }
+
+    
+        #navbar ul b {
+            display: flex;
+            font-family: 'lato', sans-serif;
+        }
+
+        #navbar ul b li {
+            list-style: none;
+            font-size: 1.0rem;
+            padding: 0px 20px;
+        }
+
+        #navbar ul b li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #navbar ul b li a:hover {
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .nav-list b li2 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        
+        
+            .contactus {
+            background-color: rgb(156, 162, 167);
+        }
+        .locationpat img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .approp {
+            margin: 100px 40px;
+            color: white
+        }
+
+        .approp h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .supp {
+            font-family: 'lato', sans-serif;
+            margin: 20px;
+            color: white
+        }
+
+        .supp p {
+            font-family: 'lato', sans-serif;
+            padding: 0px 37px
+        }
+
+        .supp p1 {
+            color: rgb(24, 24, 142);
+            cursor: pointer
+        }
+
+        .supp h3 {
+            padding: 0px 37px
+        }
+
+        .mediare {
+            margin: 20px;
+            font-family: 'lato', sans-serif;
+            color: white
+        }
+
+        .mediare p {
+            padding: 0px 37px
+        }
+
+        .mediare h3 {
+            padding: 0px 37px
+        }
+
+
+        .secur h3 {
+            color: white
+        }
+
+        .secur p {
+            color: white
+        }
+
+        .fir2 {
+            width: 50%;
+        }
+
+        .sec2 {
+            width: 50%;
+        }
+
+        .all4 {
+            display: flex
+        }
+
+        .contactus h2 {
+            font-family: 'lato', sans-serif;
+            padding: 40px 60px;color:white
+        }
+
+        .secur {
+            padding: 20px 37px;
+            font-family: 'lato', sans-serif;
+        }
+
+        .vsk1 {
+            padding: 0px 37px;
+            font-family: 'lato', sans-serif;
+        }
+
+        .vsk1 h3 {
+            color: white
+        }
+
+        .vsk1 p {
+            color: white
+        }
+
+
+       
+        .secur p1 a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.secur p1 a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+.secur p1 a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.secur p1 a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+        
+        
+        .mediare p1 a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.mediare p1 a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+.mediare p1 a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.mediare p1 a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+       
+        .vsk1 p1{
+  color:blue;cursor:pointer;
+ 
+}
+
+
+        /* address start */
+        .agh {
+            color: white;
+            font-family: 'lato', sans-serif;
+        }
+
+        .locationvk {
+            padding: 0px 50px;
+        }
+
+        .locationvk p6 {
+            color: rgb(24, 24, 142);
+            cursor: pointer;
+        }
+
+        .locationpat {
+            height: 350px;
+            width: 450px;
+            margin-left: 40px;
+        }
+
+        .locationpat img {
+            border-radius: 40px
+        }
+
+        .imgad {
+            display: flex
+        }
+
+        .agh {
+            width: 50%;
+        }
+        #vss {
+            font-size: 1.2rem;
+            height: 40px;
+            text-align: center;
+            background-color:rgb(94, 101, 101); padding-top:10px
+
+        }
+    </style>
+</head>
+<div style="width:1270px;margin:0px auto;overflow:hidden;">
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html">
+            <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+        </div>
+        <ul class="nav-list">
+            <b>
+                <li><a href="sign.html">SIGN UP</a></li>
+                <!--in result underline will come because of anchor tag used here-->
+                <li><a href="LOGIN.html">LOGIN</a></li>
+                <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
+                <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
+            </b>
+        </ul>
+    </nav>
+
+
+    <section class="contactus">
+
+        <h2>Reach the Appropriate Team</h2>
+        <div class="all4">
+            <div class="fir2">
+                <div class="supp">
+                    <h3>CUSTOMER SUPPORT</h3>
+                    <P>For customer with your bookings and other quries.<br>contact us at <p1>9334337270</p1>
+                    </P>
+                </div>
+                <div class="mediare">
+                    <h3>MEDIA RELATED QUERIES</h3>
+                    <p>For press and media related queries please mail us at <br>
+                        <p1><a href="mailto:vvscarrental@gmail.com">VikashRajput12@gmail.com</a></p1>
+                    </p>
+                </div>
+            </div>
+
+            <div class="sec2">
+                <div class="secur">
+                    <h3>CUSTOMER SECURITY</h3>
+                    <p>If you have security concerns,please report your issue with vvs at<br>
+                        <p1><a href="mailto:vvscarrental@gmail.com">vsk17369@gmail.com</a></p1>
+                    </p>
+                </div>
+                <div class="vsk1">
+                    <h3>DRIVE FOR VSS</h3>
+                    <p>If you are a driver or a fleet manager and want attach your vechile with vvs,call at <p1>
+                            8084871852</p1>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="imgad">
+            <div class="agh">
+                <h2>Address</h2><br>
+                <div class="locationvk">
+                    <p>REGESTIRED OFFICE</p><br>
+                    <p1>VVS Technologies private limited</p1><br>
+                    <p2>#414,3rd Floor,4th Block,</p2><br>
+                    <p3>17th Main,100Feet Road</p3><br>
+                    <p4>Bansghat,patna,800001</p4><br>
+                    <p5>Phone number = <p6> 9334337270</p6>
+                    </p5>
+                </div>
+            </div>
+            <div class="locationpat"><img src="img/vvspatna.png"></div>
+           
+        </div>
+    </section>
+    <div id="vss">
+        <p class="copyright">copyright &copy;vvs car rental.com</p>
+    </div>
+   
+
+</body>
+</div>
+</html>
