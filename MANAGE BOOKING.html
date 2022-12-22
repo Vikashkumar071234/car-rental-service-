@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>  
-        function vikashsingh() 
-    { window.alert("you have not done booking"); }
-</script>
+    <script>
+        function vikashsingh() { window.alert("you have not done booking"); }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
         /* font-family: 'lato', sans-serif; */
@@ -21,7 +20,7 @@
             padding: 0;
             margin: 0;
         }
-      
+
         /* #navbar desining starts*/
         #logo {}
 
@@ -228,7 +227,7 @@
         }
 
 
-    
+
 
 
         .nav-list b li2 a {
@@ -238,106 +237,113 @@
     </style>
 </head>
 <div style="width:1270px;margin:0px auto;overflow:hidden;">
-<body>
-    <nav id="navbar">
-        <div id="logo">
-            <a href="index.html">
-                <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+
+    <body>
+        <nav id="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo1.jpg" alt="logo" title="Want to go to home page."></a>
+            </div>
+            <ul class="nav-list">
+                <b>
+                    <li><a href="sign.html">SIGN UP</a></li>
+                    <!--in result underline will come because of anchor tag used here-->
+                    <li><a href="LOGIN.html">LOGIN</a></li>
+                    <li2><a href="">MANAGE BOOKING</a></li2>
+                    <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
+                </b>
+            </ul>
+        </nav>
+
+
+        <div class="managebooking">
+            <div id="firtwov">
+                <h2>My Booking</h2>
+                <div id="box1">
+                    <div id="allpd">
+                        <form action="index.html" autocomplete="on">
+                            <label for="email address" class="emaadd">Enter your Email Address</label><br>
+                            <input type="text" id="emavk" name="email address" required
+                                placeholder="Enter your Email Address"><br>
+
+                            <label for="Reservation Id" class="idre">Reservation Id #</label><br>
+                            <input type="text" id="idvk" name="Reservation Id" required
+                                placeholder="Reservation Id"><br>
+
+
+                            <a href="action.html"><input type="submit" value="View Reservation" onclick="vikashsingh()"
+                                    id="btview"></a>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div id="bookinginfo">
+                <div id="carlogo"><img src="img/update.png" alt="car logo"></div>
+                <h3>Booking Update Information</h3>
+                <p>Amend or cancel your reservation online up to 24 hours before the scheduled pick-up arrival time.</p>
+            </div>
+
         </div>
-        <ul class="nav-list">
-            <b>
-                <li><a href="sign.html">SIGN UP</a></li>
-                <!--in result underline will come because of anchor tag used here-->
-                <li><a href="LOGIN.html">LOGIN</a></li>
-                <li2><a href="">MANAGE BOOKING</a></li2>
-                <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
-            </b>
-        </ul>
-    </nav>
 
 
-    <div class="managebooking">
-        <div id="firtwov">
-            <h2>My Booking</h2>
-            <div id="box1">
-                <div id="allpd">
-                    <form action="index.html" autocomplete="on">
-                        <label for="email address" class="emaadd">Enter your Email Address</label><br>
-                        <input type="text" id="emavk" name="email address" required
-                            placeholder="Enter your Email Address"><br>
+        <div class="questionfre">
+            <h2>Frequently Asked Questions</h2>
 
-                        <label for="Reservation Id" class="idre">Reservation Id #</label><br>
-                        <input type="text" id="idvk" name="Reservation Id" required placeholder="Reservation Id"><br>
+            <div id="changesbook">
+                <h3>Can I make changes to my booking?</h3>
+                <p>You can made changes to your booking up to 24 hours before your scheduled pick-up time.To ammend your
+                    booking
+                    ,log into our website"Booking" section using the details contained in your confirmation email.if
+                    you can't access your booking online,please use the cancellation form above.
+                </p>
+            </div>
+            <div id="cancelbook">
+                <h3>How can I cancel my booking?</h3>
+                <p>You can cancel your booking via the "Booking section"of our website using the detail contained in
+                    your
+                    confirmation
+                    email.
+                </p>
+            </div>
+            <div id="suitcase">
+                <h3>What is the number of luggages orsuitcases?</h3>
 
-                    
-                        <a href="action.html"><input type="submit" value="View Reservation" onclick="vikashsingh()" id="btview"></a>
-                
-                </form>
-
+                <p>you can not carry more than 7 luggages. if more then there will be some extra charges.</p>
             </div>
         </div>
-        </div>
-        <div id="bookinginfo">
-            <div id="carlogo"><img src="img/update.png" alt="car logo"></div>
-            <h3>Booking Update Information</h3>
-            <p>Amend or cancel your reservation online up to 24 hours before the scheduled pick-up arrival time.</p>
-        </div>
 
-    </div>
-    
+        <div class="cancelpol">
+            <h2>VVS Cancellation Policy</h2>
+            <p> Your trips booked through the vvs car rental can be cancelled.You may cancel your booking 24 hours
+                before
+                your
+                scheduled journey.
+            </p><br>
 
-    <div class="questionfre">
-        <h2>Frequently Asked Questions</h2>
-
-        <div id="changesbook">
-            <h3>Can I make changes to my booking?</h3>
-            <p>You can made changes to your booking up to 24 hours before your scheduled pick-up time.To ammend your
-                booking
-                ,log into our website"Booking" section using the details contained in your confirmation email.if
-                you can't access your booking online,please use the cancellation form above.
+            <p>There are no cancellation fees except in such cases whre the taxi has arrived at the custombers location
+                . in such cases we will charge some money.</p>
+            <br>
+            <p>Aside from the cancellation of your booking.you can also modify your planned time,type of vechile,and
+                destination
+                .
             </p>
         </div>
-        <div id="cancelbook">
-            <h3>How can I cancel my booking?</h3>
-            <p>You can cancel your booking via the "Booking section"of our website using the detail contained in your
-                confirmation
-                email.
-            </p>
+
+        <div class="refundpol">
+            <h2>VVS Taxi Refund Policy</h2>
+            <p>This refund policy is applicable for all.</p>
+            <br>
+            <p>Complaints like Mistakenly transferred,2 times debited from your account etc should be addressed within
+                10
+                working days.</p>
+            <br>
+            <p>You may reach us at Email:vikashrajupt@gmail.com,Mobile:9334337270</p>
         </div>
-        <div id="suitcase">
-            <h3>What is the number of luggages orsuitcases?</h3>
 
-            <p>you can not carry more than 7 luggages. if more then there will be some extra charges.</p>
-        </div>
-    </div>
 
-    <div class="cancelpol">
-        <h2>VVS Cancellation Policy</h2>
-        <p> Your trips booked through the vvs car rental can be cancelled.You may cancel your booking 24 hours before
-            your
-            scheduled journey.
-        </p><br>
-
-        <p>There are no cancellation fees except in such cases whre the taxi has arrived at the custombers location
-            . in such cases we will charge some money.</p>
-        <br>
-        <p>Aside from the cancellation of your booking.you can also modify your planned time,type of vechile,and
-            destination
-            .
-        </p>
-    </div>
-
-    <div class="refundpol">
-        <h2>VVS Taxi Refund Policy</h2>
-        <p>This refund policy is applicable for all.</p>
-        <br>
-        <p>Complaints like Mistakenly transferred,2 times debited from your account etc should be addressed within 10
-            working days.</p>
-        <br>
-        <p>You may reach us at Email:vikashrajupt@gmail.com,Mobile:9334337270</p>
-    </div>
-
-  
-</body>
+    </body>
 </div>
+
 </html>

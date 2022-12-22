@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>  
-        function singh() 
-    { window.alert("you want to create account"); }
-    function sing() 
-    { window.alert("you want to login your account"); }
-    
-</script>
+    <script>
+        function singh() { window.alert("you want to create account"); }
+        function sing() { window.alert("you want to login your account"); }
+
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
@@ -23,7 +21,7 @@
         }
 
         /* #navbar desining starts*/
-       
+
 
         #logologin img {
             margin: 10px 20px;
@@ -78,7 +76,9 @@
 
 
         body {
-            background-image: url("img/loginpic.jpg");background-attachment:fixed;background-size: cover;
+            background-image: url("img/loginpic.jpg");
+            background-attachment: fixed;
+            background-size: cover;
 
         }
 
@@ -174,49 +174,47 @@
             border: white;
             margin: 25px 95px
         }
-
-
-       
     </style>
 </head>
 <div style="width:1270px;margin:0px auto;overflow:hidden;">
-<body>
-    <nav id="navbar">
-        <div id="logologin">
-            <a href="index.html">
-                <img src="img/logo1.jpg" alt="logo"title="Want to go to home page."></a>
+
+    <body>
+        <nav id="navbar">
+            <div id="logologin">
+                <a href="index.html">
+                    <img src="img/logo1.jpg" alt="logo" title="Want to go to home page."></a>
+            </div>
+            <ul class="nav-list">
+                <b>
+                    <li><a href="sign.html">SIGN UP</a></li>
+                    <!--in result underline will come because of anchor tag used here-->
+                    <li2><a href="">LOGIN</a></li2>
+                    <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
+                    <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
+                </b>
+            </ul>
+        </nav>
+        <div class="logi-for">
+
+            <div id="logimg"><img src="img/loginpic.png"></div>
+            <form action="index.html">
+                <label for="usne" class="mob">Email or Username</label><br>
+                <input type="text" id="usne" name="user" required placeholder="Email or username"><br>
+
+                <label for="passw" class="pas">password</label><br>
+                <input type="password" id="passw" name="password" required placeholder="Password"><br>
+
+                <a href="index.html"><input type="submit" value="Login" onclick="sing()" id="btnlog"></a>
+                <p><a href="">Forgot password?</a></p>
+            </form>
+            <form action="sign.html">
+                <a href="sign.html"><input type="submit" value="Create account" onclick="singh()" id="btnnew"></a>
+            </form>
         </div>
-        <ul class="nav-list">
-            <b>
-                <li><a href="sign.html">SIGN UP</a></li>
-                <!--in result underline will come because of anchor tag used here-->
-                <li2><a href="">LOGIN</a></li2>
-                <li><a href="MANAGE BOOKING.html">MANAGE BOOKING</a></li>
-                <li><a href="LOCATIONS.html">POPULAR LOCATIONS</a></li>
-            </b>
-        </ul>
-    </nav>
-    <div class="logi-for">
-        
-        <div id="logimg"><img src="img/loginpic.png"></div>
-<form action="index.html">
-        <label for="usne" class="mob">Email or Username</label><br>
-        <input type="text" id="usne" name="user" required placeholder="Email or username"><br>
 
-        <label for="passw" class="pas">password</label><br>
-        <input type="password" id="passw" name="password" 
-        required placeholder="Password"><br>
-        
-        <a href="index.html"><input type="submit" value="Login" onclick="sing()" id="btnlog"></a>
-        <p><a href="">Forgot password?</a></p>
-        </form>
-        <form action="sign.html">
-        <a href="sign.html"><input type="submit" value="Create account" onclick="singh()" id="btnnew"></a>
-</form>
-    </div>
 
-   
-  
-</body>
+
+    </body>
 </div>
+
 </html>
